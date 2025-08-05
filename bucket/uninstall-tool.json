@@ -1,0 +1,15 @@
+{
+    "version": "3.7.3.5719",    
+    "description":"🛠️ 维护工具 | Geek 卸载工具专业版",
+    "homepage": "https://pan.xifan.fun/scoop/",
+    "url": "https://pan.xifan.fun/d/scoop/uninstall-tool.zip",
+    "hash":"711bb3dfb9fa655973a31601bf652e95894335310667e1b96e6fb794ea4d4f36",
+    "license":"Freeware",
+    "bin": "uninstall-tool.exe",
+    "shortcuts": [
+        [
+            "uninstall-tool.exe",
+            "Geek Uninstall Tool"
+        ]
+    ]
+}

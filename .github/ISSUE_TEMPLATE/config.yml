@@ -1,3 +1,7 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-issue-config
+# GitHub Issue Template Configuration
+# This file configures the issue template chooser and contact links
+# See: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
 blank_issues_enabled: true
 contact_links:
   - name: Scoop Community Support
