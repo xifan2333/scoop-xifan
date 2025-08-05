@@ -11,5 +11,13 @@
             "uninstall-tool.exe",
             "Geek Uninstall Tool"
         ]
+    ],
+    "post_install": [
+        "$desktop = [Environment]::GetFolderPath('Desktop')",
+        "$WshShell = New-Object -comObject WScript.Shell",
+        "$Shortcut = $WshShell.CreateShortcut(\"$desktop\\Geek Uninstall Tool.lnk\")",
+        "$Shortcut.TargetPath = \"$dir\\uninstall-tool.exe\"",
+        "$Shortcut.WorkingDirectory = \"$dir\"",
+        "$Shortcut.Save()"
     ]
 }

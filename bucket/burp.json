@@ -1,0 +1,54 @@
+{
+    "version": "2025.7",    
+    "description":"🛠️ 抓包工具 | Burp Suite 吾爱破解版",
+    "homepage": "https://www.52pojie.cn/thread-2005151-1-1.html",
+    "url": "https://pan.xifan.fun/d/scoop/burp.zip",
+    "hash":"d046472940a269292444707f5c3e15032f1f12a93c0b11777a191b2d28704e79",
+    "license":"Freeware",
+    "bin": [
+        ["CN_Burp.bat", "burp-cn"],
+        ["EN_Burp.bat", "burp-en"]
+    ],
+    "shortcuts": [
+        [
+            "Start.VBS",
+            "Burp Suite 激活工具"
+        ],
+        [
+            "CN_Burp.VBS",
+            "Burp Suite (中文版)"
+        ],
+        [
+            "EN_Burp.VBS", 
+            "Burp Suite (英文版)"
+        ]
+    ],
+    "post_install": [
+        "$desktop = [Environment]::GetFolderPath('Desktop')",
+        "$WshShell = New-Object -comObject WScript.Shell",
+        "$Shortcut = $WshShell.CreateShortcut(\"$desktop\\Burp Suite 激活工具.lnk\")",
+        "$Shortcut.TargetPath = \"$dir\\Start.vbs\"",
+        "$Shortcut.IconLocation = \"$dir\\icons\\start.ico\"",
+        "$Shortcut.WorkingDirectory = \"$dir\"",
+        "$Shortcut.Save()",
+        "$Shortcut = $WshShell.CreateShortcut(\"$desktop\\Burp Suite (中文版).lnk\")",
+        "$Shortcut.TargetPath = \"$dir\\CN_Burp.VBS\"",
+        "$Shortcut.IconLocation = \"$dir\\icons\\cn_burp.ico\"",
+        "$Shortcut.WorkingDirectory = \"$dir\"",
+        "$Shortcut.Save()",
+        "$Shortcut = $WshShell.CreateShortcut(\"$desktop\\Burp Suite (英文版).lnk\")",
+        "$Shortcut.TargetPath = \"$dir\\EN_Burp.VBS\"", 
+        "$Shortcut.IconLocation = \"$dir\\icons\\en_burp.ico\"",
+        "$Shortcut.WorkingDirectory = \"$dir\"",
+        "$Shortcut.Save()"
+    ],
+    "notes": [
+        "使用说明：",
+        "1. 首次使用请先运行 Start 激活一次",
+        "2. 激活完成后需要关闭注册机，Burp 才会启动",
+        "3. 所有目录不能有中文和特殊字符",
+        "4. 具体使用方法见安装目录中的说明文档",
+        "5. 安装路径：$dir",
+        "6. 项目由 Datch 维护，详见：https://www.52pojie.cn/thread-2005151-1-1.html"
+    ]
+}
