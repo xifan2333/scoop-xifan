@@ -1,11 +1,18 @@
 # Scoop Xifan Bucket
 
-
+![Scoop Bucket](https://img.shields.io/badge/Scoop-Bucket-orange?style=flat-square&logo=powershell)
+![GitHub repo size](https://img.shields.io/github/repo-size/xifan2333/scoop-xifan?style=flat-square&logo=github)
+![GitHub last commit](https://img.shields.io/github/last-commit/xifan2333/scoop-xifan?style=flat-square&logo=github)
+![GitHub issues](https://img.shields.io/github/issues/xifan2333/scoop-xifan?style=flat-square&logo=github)
+![GitHub stars](https://img.shields.io/github/stars/xifan2333/scoop-xifan?style=flat-square&logo=github)
+![GitHub forks](https://img.shields.io/github/forks/xifan2333/scoop-xifan?style=flat-square&logo=github)
 ![Software Count](https://img.shields.io/badge/软件数量-1-blue?style=flat-square&logo=windows)
 ![Categories](https://img.shields.io/badge/分类数量-1-green?style=flat-square&logo=folder)
 ![License](https://img.shields.io/github/license/xifan2333/scoop-xifan?style=flat-square&logo=opensourceinitiative)
 
-个人维护的 Scoop bucket，包含一些常用软件的安装配置。
+![banner](assets/banner.png)  
+  
+个人维护的 Scoop bucket，收集一些 Windows 上常用的软件
 
 ## 安装方式
 
@@ -21,7 +28,7 @@ scoop install xifan/<软件名>
 
 > 📦 当前收录软件：**1** 个  
 > 🗃️ 分类数量：**1** 个  
-> 🕐 最后更新：2025-08-05 07:44:09
+> 🕐 最后更新：2025-08-05 09:27:57
 
 
 ### 🛠️ 维护工具

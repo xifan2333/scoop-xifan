@@ -51,19 +51,18 @@ foreach ($file in $manifestFiles) {
         }
         
         $softwareList += [PSCustomObject]@{
-            FileName = $file.BaseName
-            Category = $category
-            Name = $name  # 这是分割后的后面部分
-            Version = $manifest.version ?? "N/A"
-            Homepage = $manifest.homepage ?? ""
-            License = $manifest.license ?? "N/A"
+            FileName    = $file.BaseName
+            Category    = $category
+            Name        = $name  # 这是分割后的后面部分
+            Version     = $manifest.version ?? "N/A"
+            Homepage    = $manifest.homepage ?? ""
+            License     = $manifest.license ?? "N/A"
             Description = $description
             DownloadUrl = $manifest.url ?? ""
         }
         
         Write-Host "  ✓ $($file.BaseName)" -ForegroundColor Gray
-    }
-    catch {
+    } catch {
         Write-Warning "Failed to parse $($file.Name): $($_.Exception.Message)"
     }
 }
@@ -87,7 +86,9 @@ $readmeContent = @"
 ![Categories](https://img.shields.io/badge/分类数量-$($groupedSoftware.Count)-green?style=flat-square&logo=folder)
 ![License](https://img.shields.io/github/license/xifan2333/scoop-xifan?style=flat-square&logo=opensourceinitiative)
 
-个人维护的 Scoop bucket，包含一些常用软件的安装配置。
+![banner](assets/banner.png)  
+  
+个人维护的 Scoop bucket，收集一些 Windows 上常用的软件
 
 ## 安装方式
 
@@ -169,8 +170,7 @@ try {
     Write-Host "✅ README.md generated successfully: $OutputFile" -ForegroundColor Green
     Write-Host "📊 Total software: $($softwareList.Count)" -ForegroundColor Cyan
     Write-Host "🗃️  Categories: $($groupedSoftware.Count)" -ForegroundColor Cyan
-}
-catch {
+} catch {
     Write-Error "Failed to write README.md: $($_.Exception.Message)"
     exit 1
 }
