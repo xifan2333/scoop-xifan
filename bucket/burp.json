@@ -6,8 +6,8 @@
     "hash":"d046472940a269292444707f5c3e15032f1f12a93c0b11777a191b2d28704e79",
     "license":"Freeware",
     "bin": [
-        ["CN_Burp.bat", "burp-cn"],
-        ["EN_Burp.bat", "burp-en"]
+        ["CN_Burp.VBS", "burp-cn"],
+        ["EN_Burp.VBS", "burp-en"]
     ],
     "shortcuts": [
         [
