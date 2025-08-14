@@ -1,0 +1,36 @@
+{
+    "version": "1.0.20",
+    "description": "🤖 AI工具 | GPT-Load",
+    "homepage": "https://github.com/tbphp/gpt-load",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tbphp/gpt-load/releases/download/v$version/gpt-load-windows-amd64.exe",
+            "hash": null,
+            "bin": [
+                [ "gpt-load-windows-amd64.exe", "gpt-load" ]
+            ]
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/tbphp/gpt-load"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tbphp/gpt-load/releases/download/v$version/gpt-load-windows-amd64.exe",
+                "hash": {
+                    "url": "https://api.github.com/repos/tbphp/gpt-load/releases/tags/v$version",
+                    "jsonpath": "$.assets[?(@.name=='gpt-load-windows-amd64.exe')].digest"
+                }
+            }
+        }
+    },
+    "post_install": [
+        "Write-Host 'Creating .env file for GPT-Load...'",
+        "$envContent = 'AUTH_KEY=\"your_auth_key_here\"'",
+        "Set-Content -Path \"$dir\\.env\" -Value $envContent",
+        "Write-Host 'Done. Please edit the .env file in $dir to set your actual AUTH_KEY.'"
+    ],
+    "notes": "GPT-Load 已成功安装。请前往以下目录编辑 .env 文件，将 AUTH_KEY 替换为您的密钥：\n\n- $dir\\.env\n\n然后才能启动服务。"
+}

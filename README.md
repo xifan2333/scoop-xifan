@@ -6,8 +6,8 @@
 ![GitHub issues](https://img.shields.io/github/issues/xifan2333/scoop-xifan?style=flat-square&logo=github)
 ![GitHub stars](https://img.shields.io/github/stars/xifan2333/scoop-xifan?style=flat-square&logo=github)
 ![GitHub forks](https://img.shields.io/github/forks/xifan2333/scoop-xifan?style=flat-square&logo=github)
-![Software Count](https://img.shields.io/badge/软件数量-1-blue?style=flat-square&logo=windows)
-![Categories](https://img.shields.io/badge/分类数量-1-green?style=flat-square&logo=folder)
+![Software Count](https://img.shields.io/badge/软件数量-3-blue?style=flat-square&logo=windows)
+![Categories](https://img.shields.io/badge/分类数量-3-green?style=flat-square&logo=folder)
 ![License](https://img.shields.io/github/license/xifan2333/scoop-xifan?style=flat-square&logo=opensourceinitiative)
 
 ![banner](assets/banner.png)  
@@ -26,9 +26,16 @@ scoop install xifan/<软件名>
 
 ## 软件列表
 
-> 📦 当前收录软件：**1** 个  
-> 🗃️ 分类数量：**1** 个  
-> 🕐 最后更新：2025-08-05 09:27:57
+> 📦 当前收录软件：**3** 个  
+> 🗃️ 分类数量：**3** 个  
+> 🕐 最后更新：2025-08-14 17:10:40
+
+
+### 🤖 AI工具
+
+| 软件名称 | 版本 | 下载地址 |
+|----------|------|----------|
+| [GPT-Load](https://github.com/tbphp/gpt-load) | 1.0.20 | `gpt-load` |
 
 
 ### 🛠️ 维护工具
@@ -36,6 +43,13 @@ scoop install xifan/<软件名>
 | 软件名称 | 版本 | 下载地址 |
 |----------|------|----------|
 | [Geek 卸载工具专业版](https://pan.xifan.fun/scoop/) | 3.7.3.5719 | [uninstall-tool](https://pan.xifan.fun/d/scoop/uninstall-tool.zip) |
+
+
+### 🛠️ 抓包工具
+
+| 软件名称 | 版本 | 下载地址 |
+|----------|------|----------|
+| [Burp Suite 吾爱破解版](https://www.52pojie.cn/thread-2005151-1-1.html) | 2025.7 | [burp](https://pan.xifan.fun/d/scoop/burp.zip) |
 
 ---
 
