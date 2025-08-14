@@ -5,24 +5,22 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tbphp/gpt-load/releases/download/v$version/gpt-load-windows-amd64.exe",
+            "url": "https://github.com/tbphp/gpt-load/releases/download/v$matchHead/gpt-load-windows-amd64.exe",
             "hash": null,
-            "bin": [
-                [ "gpt-load-windows-amd64.exe", "gpt-load" ]
-            ]
+            "bin": [["gpt-load-windows-amd64.exe", "gpt-load"]]
         }
     },
     "checkver": {
-        "github": "https://github.com/tbphp/gpt-load",
+        "url": "https://api.github.com/repos/tbphp/gpt-load/releases/latest",
+        "jp": "$.tag_name",
         "regex": "v([\\d.]+)"
-
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/tbphp/gpt-load/releases/download/v$version/gpt-load-windows-amd64.exe",
+                "url": "https://github.com/tbphp/gpt-load/releases/download/v$matchHead/gpt-load-windows-amd64.exe",
                 "hash": {
-                    "url": "https://api.github.com/repos/tbphp/gpt-load/releases/tags/v$version",
+                    "url": "https://api.github.com/repos/tbphp/gpt-load/releases/tags/v$matchHead",
                     "jsonpath": "$.assets[?(@.name=='gpt-load-windows-amd64.exe')].digest"
                 }
             }
