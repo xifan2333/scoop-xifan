@@ -13,7 +13,9 @@
         }
     },
     "checkver": {
-        "github": "https://github.com/tbphp/gpt-load"
+        "github": "https://github.com/tbphp/gpt-load",
+        "regex": "v([\\d.]+)"
+
     },
     "autoupdate": {
         "architecture": {
